@@ -23,9 +23,9 @@ If you use an existing common name for a new key/cert it will be overwritten in 
 
 ## Installation
 
-Click on the link for the script above. When the PowerShell code page appears click the **Download Raw file** button top right. Once downloaded to your computer have a read of the script in your prefered editor. All the information for executing the script will be in the script synopsis.
+Click on the link for the script above. When the PowerShell code page appears click the **Download Raw file** button top right. All the information for executing the script will be in the script synopsis.
 The system this script was developed on was `Windows Server 2016`, the PowerShell version is `5.1.14393.206`.
-Once installed open the script in Notepad or PowerShell ISE. Find each line that has the comment text `CHANGEME` in it. Alter these lines to match your enviroment.
+Once installed have a read of the script in your prefered editor. Find each line that has the comment text `CHANGEME` in it. Alter these lines to match your enviroment.
 ## Usage
 
 To execute the PowerShell scripts in this repository. Save the ps1 file to a folder on your computer, then from a powershell prompt in the same folder.
