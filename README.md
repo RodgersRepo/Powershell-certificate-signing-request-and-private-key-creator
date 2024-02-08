@@ -8,7 +8,7 @@ This script should be installed on a Microsoft server with the Certificate Autho
 >certutil –config - -ping 
 ```
 You will need to alter the script variable `$global:caServerName` to equal the result of the above command in this format `server FQDN/CA` the reverse of how it appears in the command result.
-If the certificate templates list is empty restart this app, if problem perists restart the CA service, failing that the entire CA server will need restarting.
+If the certificate templates list is empty restart this script, if problem perists restart the CA service, failing that the entire CA server will need restarting.
 
 This script was not developed on on enterprise server so certs will only be a year in duration. It does not honour the template validity period. An enterprise CA should honour this (needs testing).
   
