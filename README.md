@@ -40,7 +40,7 @@ powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\<PathToYour
 Then just double click the shortcut like you are starting an application. Check the correct path to the  PowerShell executable on your system. Depending on your system you may have to right click the script shortcut and `Run as administrator` (needs testing).
 
 ## Known Problems
-This script encrypts the private key using the PBKDF1 standard. This standard is practically obselete, but still supported at the time this script was authored. To try and mitigate the risks the script applys a high entrophy pass phrase.
+This script encrypts the private key using the PBKDF1 standard. This standard is practically obselete, but still supported at the time this script was authored. To try and mitigate the risks the script applys a high entrophy pass phrase for you.
 
 ## Credits and references
 
