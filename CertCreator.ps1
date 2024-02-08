@@ -24,7 +24,7 @@
   C:\CertsToExport folder. You will recieve a warning.
  
 .NOTES
-Copyright (C) 2022  A Cripps
+Copyright (C) 2022  RITT
  
  
      This program is free software: you can redistribute it and/or modify
@@ -42,10 +42,10 @@ Copyright (C) 2022  A Cripps
     Last Updated:        
    
     Change comments:
-    Initial realease - AC
+    Initial realease - RITT
    
    
-  Author: Crippa AC
+  Author: RITT
        
 .EXAMPLE
   Run .\CertCreator.ps1 <no arguments needed>
@@ -64,7 +64,7 @@ $global:scriptPath = Split-Path -Path $MyInvocation.MyCommand.Path  # This scrip
 $global:scriptName = $MyInvocation.MyCommand.Name                   # This scripts name
 $global:workingFolder = "C:\CertsToExport"                          # Folder where certs/keys saved
 $global:subject = "OU=MYUNIT,O=MYORG,C=GB"                          # Default subject names for the certifivate CHANGEME
-$global:caServerName = "WIN1DS.voicevid.co.uk\voicevid-WIN1DS-CA"   # My CA, find using certutil –config - -ping CHANGEME
+$global:caServerName = "WIN1DS.domian.co.uk\domain-WIN1DS-CA"       # My CA, find using certutil –config - -ping CHANGEME
 $wpf = @{ }                                                         # A hash table to store node names from the XAML below
                                                                     # hash tables are key/value stored arrays, each
                                                                     # value in the array has a key
