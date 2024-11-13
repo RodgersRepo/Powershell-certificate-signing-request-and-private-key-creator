@@ -43,6 +43,8 @@ Copyright (C) 2022  RITT
    
     Change comments:
     Initial realease - RITT
+                V1.1 - Changed the Convert-KeyAndCert function as common name couldnt handle FQDN
+                       believe that putting a fqdn in the Common and SAN fields is now best practise
    
    
   Author: RITT
@@ -461,7 +463,7 @@ function Convert-KeyAndCert ($newWorkingFolder, $commonName, $privKeyPasWd)
     $fileName = $($commonName -replace "[\W]", "").Trim()
 
     # The thumprint of the cert that has the private key
-    $certDetails = Get-ChildItem -Path Cert:\LocalMachine\REQUEST  | where {$_.Subject –like "*$fileName*"}
+    $certDetails = Get-ChildItem -Path Cert:\LocalMachine\REQUEST  | where {$_.Subject –like "*$commonName*"}
     $certThumbprint = $certDetails.Thumbprint
 
     # Export entire cert and private key as a pfx file to the working folder
